@@ -4,8 +4,8 @@ class Game {
     this.player1 = new Player(1, "🧑🏼‍🚀");
     this.player2 = new Player(2, "🤖");
     this.complete = false;
-    this.turn = this.player1.token;
-    this.plays = 0
+    this.turn = this.player1;
+    this.plays = 0;
     this.winner;
     this.winningBoards = [
       [0, 1, 2],
@@ -22,7 +22,8 @@ class Game {
   gameBoardLogic(clickLocation) {
     if (this.board.includes(clickLocation) && (!this.complete)) {
       var boardIndex = this.board.indexOf(clickLocation);
-      this.board[boardIndex] = this.turn;
+      var token = this.turn.token
+      this.board[boardIndex] = token;
       this.checkGameOver();
       this.nextTurn();
     }
@@ -35,10 +36,10 @@ class Game {
   }
 
   nextTurn() {
-    if (this.turn === this.player2.token) {
-      this.turn = this.player1.token;
+    if (this.turn === this.player2) {
+      this.turn = this.player1;
     } else {
-      this.turn = this.player2.token;
+      this.turn = this.player2;
     }
   }
 

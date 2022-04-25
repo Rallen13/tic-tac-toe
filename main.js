@@ -11,13 +11,22 @@ gameBoard.addEventListener("click", checkClickLocation);
 
 // event handlers and functions go here
 function checkClickLocation(event) {
+  if (!newGame.complete) {
     makeMoves(event);
+  }
+  checkGameIsCompleted();
 }
 
 function makeMoves(event) {
   newGame.gameBoardLogic(event.target.id);
   updateBoard();
   updateTurnDecider();
+}
+
+function checkGameIsCompleted() {
+  if (newGame.complete) {
+    updateWinner();
+  }
 }
 
 function updateBoard() {
@@ -31,5 +40,9 @@ function updateBoard() {
 }
 
 function updateTurnDecider() {
-  turnDecider.innerHTML = `${newGame.turn}s Turn`
+  turnDecider.innerHTML = `${newGame.turn.token}s Turn`
+}
+
+function updateWinner() {
+  turnDecider.innerHTML = `${newGame.winner.token} WINS`
 }
