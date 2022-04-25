@@ -26,6 +26,7 @@ function makeMoves(event) {
 function checkGameIsCompleted() {
   if (newGame.complete) {
     updateWinner();
+    loadWins();
   }
 }
 
@@ -52,5 +53,4 @@ function loadWins() {
   var player2Wins = document.querySelector(".player-2-wins");
   player1Wins.innerHTML = `${newGame.player1.wins} Wins`;
   player2Wins.innerHTML = `${newGame.player2.wins} Wins`;
-  updateTurnDecider();
 }
