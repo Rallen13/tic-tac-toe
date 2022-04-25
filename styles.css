@@ -71,3 +71,8 @@ main {
   height: 10rem;
   width: 10rem;
 }
+
+.square {
+  cursor: pointer;
+  font-size: 3rem;
+}
