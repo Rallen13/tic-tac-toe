@@ -54,7 +54,16 @@ class Game {
     if (this.board[this.winningBoards[i][0]] === this.board[this.winningBoards[i][1]] &&
        this.board[this.winningBoards[i][0]] === this.board[this.winningBoards[i][2]]) {
          this.winner = this.turn;
+         this.setWins();
          this.completeGame();
+    }
+  }
+
+  setWins() {
+    if (this.winner === this.player1) {
+      this.player1.wonTheGame()
+    } else if (this.winner === this.player2) {
+      this.player2.wonTheGame()
     }
   }
 

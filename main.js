@@ -46,3 +46,11 @@ function updateTurnDecider() {
 function updateWinner() {
   turnDecider.innerHTML = `${newGame.winner.token} WINS`
 }
+
+function loadWins() {
+  var player1Wins = document.querySelector(".player-1-wins");
+  var player2Wins = document.querySelector(".player-2-wins");
+  player1Wins.innerHTML = `${newGame.player1.wins} Wins`;
+  player2Wins.innerHTML = `${newGame.player2.wins} Wins`;
+  updateTurnDecider();
+}
