@@ -1,12 +1,24 @@
 body {
  display: flex;
- flex-direction: row;
- height: 950px;
- background-image: url("assets/space-background.jpeg")
+ height: 100%;
+ flex-flow: column wrap;
+ justify-content: center;
+ background-image: url("assets/space-background.jpeg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ color: #ffffff;
 }
 
-h1, h2 {
-  
+main {
+  display: flex;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: darkblue;
 }
 
 .center-section {
@@ -18,7 +30,8 @@ h1, h2 {
 }
 
 .game-board {
- display: grid;  margin-top: 25px;
+ display: grid;
+ margin-top: 25px;
  justify-content: center;
  grid-template-columns: 180px 180px 180px;
  grid-template-rows: 180px 180px 180px;
@@ -28,7 +41,7 @@ h1, h2 {
  display: flex;
  align-items: center;
  justify-content: center;
- border: 10px solid black;
+ border: 10px solid white;
 }
 
 .game-board > .right {
@@ -52,4 +65,9 @@ h1, h2 {
  flex-direction: column;
  align-items: center;
  width: 30%;
+}
+
+.player-img {
+  height: 10rem;
+  width: 10rem;
 }
