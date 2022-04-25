@@ -1,6 +1,7 @@
 // querry selectors go here
 var gameBoard = document.querySelector(".game-board");
 var playableSpots = document.querySelectorAll(".square");
+var turnDecider = document.querySelector(".turn");
 
 // global variables go here
 var newGame = new Game();
@@ -16,6 +17,7 @@ function checkClickLocation(event) {
 function makeMoves(event) {
   newGame.gameBoardLogic(event.target.id);
   updateBoard();
+  updateTurnDecider();
 }
 
 function updateBoard() {
@@ -26,4 +28,8 @@ function updateBoard() {
       playableSpots[i].innerHTML = '';
     }
   }
+}
+
+function updateTurnDecider() {
+  turnDecider.innerHTML = `${newGame.turn}s Turn`
 }

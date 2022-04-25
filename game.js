@@ -11,6 +11,15 @@ class Game {
     if (this.board.includes(clickLocation) && (!this.complete)) {
       var boardIndex = this.board.indexOf(clickLocation);
       this.board[boardIndex] = this.turn;
+      this.nextTurn();
+    }
+  }
+
+  nextTurn() {
+    if (this.turn === this.player2.token) {
+      this.turn = this.player1.token;
+    } else {
+      this.turn = this.player2.token;
     }
   }
 }
