@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- maybe add a font link -->
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="utf-8">
+    <title>Battlestar Galactica Tic Tac Toe</title>
+  </head>
+  <body>
+    <section class="side-panel">
+      <h2>
+        <img src=assets/battlestar-glactica-cylon.webp alt="Player1 token: Cylon from Battlestar Galactica">
+      </h2>
+      <h2 class="player-1-wins">0 Wins</h2>
+      <section class="player-1-boards"></section>
+    </section>
+    <section class="center-section">
+      <h1 class="turn">Defeat the Cylon!</h1>
+      <section class="game-board">
+        <section id="top-left" class="top left square"></section>
+        <section id="top-center" class="top square"></section>
+        <section id="top-right" class="top right square"></section>
+        <section id="mid-left" class="left square"></section>
+        <section id="mid-center" class="square"></section>
+        <section id="mid-right" class="right square"></section>
+        <section id="bottom-left" class="bottom left square"></section>
+        <section id="bottom-center" class="bottom square"></section>
+        <section id="bottom-right" class="bottom right square"></section>
+      </section>
+    </section>
+    <section class="side-panel">
+      <h2>
+        <img src=assets/colonial-viper.jpg alt="Player2 token: Colonial Viper">‍
+      </h2>
+      <h2 class="player-2-wins">0 Wins</h2>
+      <section class="player-2-boards"></section>
+    </section>
+    <script src="player.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
