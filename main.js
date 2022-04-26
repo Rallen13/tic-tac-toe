@@ -32,12 +32,16 @@ function checkGameIsCompleted() {
 
 function updateBoard() {
   for (var i = 0; i < playableSpots.length; i++) {
-    if (newGame.board[i].length === 2 || newGame.board[i].length === 7) {
-      playableSpots[i].innerHTML = newGame.board[i];
+    if (newGame.board[i].length === 1) {
+      setCustomIcon(i)
     } else {
       playableSpots[i].innerHTML = '';
     }
   }
+}
+
+function setCustomIcon(i) {
+  playableSpots[i].innerHTML = newGame.board[i];
 }
 
 function updateTurnDecider() {
