@@ -6,10 +6,6 @@ Battlestar Galactica themed Tic Tac Toe game. Lieutenant Starbuck of the Colonia
 
 The spec for this project can be found [here](https://frontend.turing.edu/projects/module-1/tic-tac-toe-solo-v2.html).
 
-## Deployed Page
-
-* [Battlestar Galactica Tic Tac Toe](file:///Users/rachelallen/Desktop/turing/mod1/mod1_solo_projects/tic-tac-toe/index.html)
-
 ## Technologies
 
 * JavaScript
