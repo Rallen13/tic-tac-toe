@@ -4,7 +4,9 @@ var playableSpots = document.querySelectorAll(".square");
 var turnDecider = document.querySelector(".turn");
 
 // global variables go here
-var newGame = new Game();
+var player1 = new Player(1, "Starbuck", "X", "assets/viper-icon.png");
+var player2 = new Player(2, "Cylon", "O", "assets/cylon-icon.png");
+var newGame = new Game(player1, player2);
 
 // event listeners go here
 gameBoard.addEventListener("click", checkClickLocation);
@@ -25,8 +27,9 @@ function makeMoves(event) {
 
 function checkGameIsCompleted() {
   if (newGame.complete) {
-    updateWinner();
+    updateEndOfGame();
     loadWins();
+    window.setTimeout(resetGame, 2000);
   }
 }
 
@@ -48,15 +51,20 @@ function setCustomIcon(i) {
   if ( newGame.board[i] === newGame.player2.marker) {
     playableSpots[i].innerHTML = `<img src=${newGame.player2.icon} />`
   }
-
 }
 
 function updateTurnDecider() {
   turnDecider.innerHTML = `${newGame.turn.token}'s Turn`
 }
 
-function updateWinner() {
-  turnDecider.innerHTML = `${newGame.winner.token} WINS`
+function updateEndOfGame() {
+  if (newGame.tie) {
+    turnDecider.innerHTML = `${newGame.tie}`
+  }
+
+  if (newGame.winner) {
+    turnDecider.innerHTML = `${newGame.winner.token} WINS`
+  }
 }
 
 function loadWins() {
@@ -64,4 +72,10 @@ function loadWins() {
   var player2Wins = document.querySelector(".player-2-wins");
   player1Wins.innerHTML = `${newGame.player1.wins} Wins`;
   player2Wins.innerHTML = `${newGame.player2.wins} Wins`;
+}
+
+function resetGame() {
+  newGame = new Game(player1, player2);
+  updateBoard();
+  updateTurnDecider();
 }

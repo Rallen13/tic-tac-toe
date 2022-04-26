@@ -1,12 +1,13 @@
 class Game {
-  constructor() {
+  constructor(player1, player2) {
     this.board = ["top-left", "top-center", "top-right", "mid-left", "mid-center", "mid-right", "bottom-left", "bottom-center", "bottom-right"];
-    this.player1 = new Player(1, "Starbuck", "X", "assets/viper-icon.png");
-    this.player2 = new Player(2, "Cylon", "O", "assets/cylon-icon.png");
+    this.player1 = player1
+    this.player2 = player2
     this.complete = false;
     this.turn = this.player1;
     this.plays = 0;
     this.winner;
+    this.tie;
     this.winningBoards = [
       [0, 1, 2],
       [3, 4, 5],
@@ -70,7 +71,7 @@ class Game {
   checkDraw() {
     this.plays += 1;
     if (this.plays === 9) {
-      this.winner = "It's a tie!";
+      this.tie = "FRAK! It's a tie!";
       this.completeGame();
     }
   }
@@ -78,5 +79,4 @@ class Game {
   completeGame() {
     this.complete = true;
   }
-
 }
