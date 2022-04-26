@@ -1,40 +1,72 @@
 body {
- display: flex;
- height: 100%;
- flex-flow: column wrap;
- justify-content: center;
- background-image: url("assets/space-background.jpeg");
- background-repeat: no-repeat;
- background-size: cover;
- color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  height: 100%;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-image: url("assets/bsg-bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
 }
 
 main {
   display: flex;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .header {
   width: 100%;
   height: auto;
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  background-color: darkblue;
+  align-items: center;
+  /* filter: drop-shadow(0 0 .75rem #1010b3); */
 }
 
-.center-section {
- margin-top: 65px;
+.logo {
+  filter: invert(100%);
+  width: 20rem;
+  height: auto;
+  padding-top: 2rem;
+}
+
+.side-section {
  display: flex;
  flex-direction: column;
  align-items: center;
- width: 40%;
+ padding: 0 2rem;
+}
+
+.center-section {
+ margin-top: 3rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ flex-grow: 2;
 }
 
 .game-board {
  display: grid;
- margin-top: 25px;
+ margin: 3rem 0 5rem 0;
  justify-content: center;
- grid-template-columns: 180px 180px 180px;
- grid-template-rows: 180px 180px 180px;
+ grid-template-columns: 10rem 10rem 10rem;
+ grid-template-rows: 10rem 10rem 10rem;
 }
 
 .game-board > section {
@@ -60,16 +92,12 @@ main {
  border-bottom: none;
 }
 
-.side-panel {
- display: flex;
- flex-direction: column;
- align-items: center;
- width: 30%;
-}
-
 .player-img {
+  object-fit: cover;
+  border-radius: 50%;
   height: 10rem;
   width: 10rem;
+  border: .5rem solid white;
 }
 
 .square {
