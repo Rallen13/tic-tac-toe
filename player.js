@@ -4,10 +4,21 @@ class Player {
     this.token = token;
     this.marker = marker;
     this.icon = icon
-    this.wins = 0;
+    this.wins = [];
   }
 
   wonTheGame() {
-    this.wins += 1
+    this.retrieveWinsFromStorage();
+    this.wins.push(newGame.board);
+    this.saveWinsToStorage();
   }
+
+  saveWinsToStorage() {
+    localStorage.setItem(this.id, JSON.stringify(this.wins));
+  }
+
+  retrieveWinsFromStorage() {
+    this.wins = JSON.parse(localStorage.getItem(this.id)) || [];
+  }
+
 }

@@ -23,7 +23,6 @@ class Game {
   gameBoardLogic(clickLocation) {
     if (this.board.includes(clickLocation) && (!this.complete)) {
       var boardIndex = this.board.indexOf(clickLocation);
-      // var token = this.turn.token
       this.board[boardIndex] = this.turn.marker;
       this.checkGameOver();
       this.nextTurn();

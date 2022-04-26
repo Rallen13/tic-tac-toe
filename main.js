@@ -9,6 +9,7 @@ var player2 = new Player(2, "Cylon", "O", "assets/cylon-icon.png");
 var newGame = new Game(player1, player2);
 
 // event listeners go here
+window.addEventListener("load", loadWins);
 gameBoard.addEventListener("click", checkClickLocation);
 
 // event handlers and functions go here
@@ -68,10 +69,12 @@ function updateEndOfGame() {
 }
 
 function loadWins() {
+  player1.retrieveWinsFromStorage();
+  player2.retrieveWinsFromStorage();
   var player1Wins = document.querySelector(".player-1-wins");
   var player2Wins = document.querySelector(".player-2-wins");
-  player1Wins.innerHTML = `${newGame.player1.wins} Wins`;
-  player2Wins.innerHTML = `${newGame.player2.wins} Wins`;
+  player1Wins.innerHTML = `${newGame.player1.wins.length} Wins`;
+  player2Wins.innerHTML = `${newGame.player2.wins.length} Wins`;
 }
 
 function resetGame() {
