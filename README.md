@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Battlestar Galactica themed Tic Tac Toe game. Lieutenant Starbuck of the Colonial Fleet battles cylons in a game of Tic Tac Toe.
+Battlestar Galactica themed Tic Tac Toe game. Lieutenant Starbuck of the Colonial Fleet battles cylons in a game of Tic Tac Toe.  
 
 The spec for this project can be found [here](https://frontend.turing.edu/projects/module-1/tic-tac-toe-solo-v2.html).
 
 ## Deployed Page
 
-* [Battlestar Galactica Tic Tac Toe](https://rallen13.github.io/whats-for-dinner/)
+* [Battlestar Galactica Tic Tac Toe](file:///Users/rachelallen/Desktop/turing/mod1/mod1_solo_projects/tic-tac-toe/index.html)
 
 ## Technologies
 
@@ -30,17 +30,6 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 ![Screen Shot 2022-04-10 at 2 08 04 PM](https://user-images.githubusercontent.com/98505112/162637989-81b11c66-d6f2-410d-b773-22706259f670.png)
 
 ![Screen Shot 2022-04-10 at 2 06 40 PM](https://user-images.githubusercontent.com/98505112/162638000-e3469666-01b0-4947-84cd-9102224c7951.png)
-
-## Possible Future Extensions
-
-* User can add their own recipes
-* User can favorite their own recipes
-* Entire meal functionality
-* Error handling and clear button
-* Login Page
-* User can delete a recipe
-* User will never see repeated recipes
-* View all recipes interface
 
 ## Sources
 
