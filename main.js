@@ -32,16 +32,27 @@ function checkGameIsCompleted() {
 
 function updateBoard() {
   for (var i = 0; i < playableSpots.length; i++) {
-    if (newGame.board[i].length === 2 || newGame.board[i].length === 7) {
-      playableSpots[i].innerHTML = newGame.board[i];
+    if (newGame.board[i].length === 1) {
+      setCustomIcon(i)
     } else {
       playableSpots[i].innerHTML = '';
     }
   }
 }
 
+function setCustomIcon(i) {
+  if ( newGame.board[i] === newGame.player1.marker) {
+    playableSpots[i].innerHTML =    `<img src=${newGame.player1.icon} />`
+  }
+
+  if ( newGame.board[i] === newGame.player2.marker) {
+    playableSpots[i].innerHTML = `<img src=${newGame.player2.icon} />`
+  }
+
+}
+
 function updateTurnDecider() {
-  turnDecider.innerHTML = `${newGame.turn.token}s Turn`
+  turnDecider.innerHTML = `${newGame.turn.token}'s Turn`
 }
 
 function updateWinner() {
