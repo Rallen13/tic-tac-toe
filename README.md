@@ -41,4 +41,5 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 
 ## Contributors
 
-* [Rachel Allen](https://github.com/Rallen13)
+* [Rachel Allen GitHub](https://github.com/Rallen13)
+* [Rachel Allen LinkedIn](https://www.linkedin.com/in/rachel-lynn-allen/)
