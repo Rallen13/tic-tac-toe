@@ -1,8 +1,8 @@
 class Game {
   constructor() {
     this.board = ["top-left", "top-center", "top-right", "mid-left", "mid-center", "mid-right", "bottom-left", "bottom-center", "bottom-right"];
-    this.player1 = new Player(1, "🧑🏼‍🚀", "X", "assets/viper-icon.png");
-    this.player2 = new Player(2, "🤖", "O", "assets/cylon-icon.png");
+    this.player1 = new Player(1, "Starbuck", "X", "assets/viper-icon.png");
+    this.player2 = new Player(2, "Cylon", "O", "assets/cylon-icon.png");
     this.complete = false;
     this.turn = this.player1;
     this.plays = 0;
