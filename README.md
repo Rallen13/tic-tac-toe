@@ -25,11 +25,13 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 
 ## Illustrations
 
-<img width="1437" alt="Screen Shot 2022-04-10 at 2 06 06 PM" src="https://user-images.githubusercontent.com/98505112/162637951-0c73939c-09f6-4b98-86c2-cf281fc3d912.png">
+<img width="1433" alt="Screen Shot 2022-04-26 at 10 34 41 AM" src="https://user-images.githubusercontent.com/98505112/165350847-0bf728ac-f433-4543-b803-f4e36747db4c.png">
 
-![Screen Shot 2022-04-10 at 2 08 04 PM](https://user-images.githubusercontent.com/98505112/162637989-81b11c66-d6f2-410d-b773-22706259f670.png)
+<img width="1404" alt="Screen Shot 2022-04-26 at 10 35 08 AM" src="https://user-images.githubusercontent.com/98505112/165351226-fcb1daca-c80e-4b64-954e-eccd725c3de5.png">
 
-![Screen Shot 2022-04-10 at 2 06 40 PM](https://user-images.githubusercontent.com/98505112/162638000-e3469666-01b0-4947-84cd-9102224c7951.png)
+<img width="645" alt="Screen Shot 2022-04-26 at 10 35 42 AM" src="https://user-images.githubusercontent.com/98505112/165351418-dd65df02-ab8c-4b82-ba31-e3606e87f74a.png">
+
+<img width="614" alt="Screen Shot 2022-04-26 at 10 36 05 AM" src="https://user-images.githubusercontent.com/98505112/165351697-10c56068-d58e-44aa-b8c1-bd040e9a92ba.png">
 
 ## Sources
 
